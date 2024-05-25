@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="icon" href="images/mylogo_circle-19.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="whole">
+        <div class="container">
+            <div class="title">
+                <h1>BMI Calculator</h1>
+            </div><br>
+            <label>Height(cm)</label>
+            <input id="height" type="number" name="centimeters" placeholder="centimeters">
+            <label>Weight(kg)</label>
+            <input id="weight" type="number" name="kilograms" placeholder="kilograms"><br>
+            <button class="btnSubmit" onclick="calculateHW()">Calculate</button>
+            <button class="btnSubmit" onclick="clearInput()">Clear</button>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Your BMI</h3>
+            <p id="result"></p>
+        </div>
+
+    </div>
+    
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
